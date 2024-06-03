@@ -4,6 +4,7 @@ COMMON
 
 @use './variables' as *;
 
-body {
-    background-color: $body-bg-color;
+.container {
+    max-width: 1280px;
+    margin: auto;
 }

@@ -13,3 +13,11 @@ export default {
 };
 </script>
 
+<template>
+    <div class="container">
+        <CharacterSearch />
+        <CharacterList />
+        <CharacterFound />
+    </div>
+</template>
+

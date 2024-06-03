@@ -1,19 +1,19 @@
 <script>
-import HeaderComponents from './components/HeaderComponents.vue';
-import MainComponents from './components/MainComponents.vue';
+import HeaderComponent from './components/HeaderComponent.vue';
+import MainComponent from './components/MainComponent.vue';
 
 export default {
   name: 'AppRickMorty',
   components: {
-    HeaderComponents,
-    MainComponents,
+    HeaderComponent,
+    MainComponent,
   },
 };
 </script>
 
 <template>
-  <HeaderComponents />
-  <MainComponents />
+  <HeaderComponent />
+  <MainComponent />
 </template>
 
 <style scoped>
