@@ -1,9 +1,19 @@
 <script>
+import HeaderComponents from './components/HeaderComponents.vue';
+import MainComponents from './components/MainComponents.vue';
 
+export default {
+  name: 'AppRickMorty',
+  components: {
+    HeaderComponents,
+    MainComponents,
+  },
+};
 </script>
 
 <template>
-  <h1>template Vue Vite</h1>
+  <HeaderComponents />
+  <MainComponents />
 </template>
 
 <style scoped>
