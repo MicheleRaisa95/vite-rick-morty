@@ -20,6 +20,7 @@ export default {
             <h2>{{ character.name }}</h2>
             <img :src="character.image" alt="Immagine del peronaggio">
             <p>{{ character.status }}</p>
+            <p>{{ character.species }}</p>
             </li>
         </ul>
     </div>
