@@ -21,7 +21,7 @@ export default {
         console.log('chiama api');
 
         axios.get(this.store.apiUrl).then((response) => {
-            this.store.data = response.data.data;
+            this.store.data = response.data.results;
             this.store.meta = response.data.meta;
         });
     },
@@ -31,7 +31,7 @@ export default {
 <template>
     <div class="container">
         <CharacterSearch />
-        <CharacterList />
+        <CharacterList :characters="store.data"/>
         <CharacterFound />
     </div>
 </template>

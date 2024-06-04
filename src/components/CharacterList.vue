@@ -1,19 +1,26 @@
 <script>
-import { store } from '../store'
+// import { store } from '../store'
 export default {
     name: 'CharacterList',
-    data() {
-        return{
-            store,
-        };
-    },
+    props: {
+        characters: Array
+    }
+    // data() {
+    //     return{
+    //         store,
+    //     };
+    // },
 };
 </script>
 
 <template>
     <div>
-        <ul>
-            <li v-for="character in store.data" :key="character.id">{{ character.name }}</li>
+        <ul v-if="characters.length > 0">
+            <li v-for="character in characters" :key="character.id">
+            <h2>{{ character.name }}</h2>
+            <img :src="character.image" alt="Immagine del peronaggio">
+            <p>{{ character.status }}</p>
+            </li>
         </ul>
     </div>
 </template>
