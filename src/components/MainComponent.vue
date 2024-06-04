@@ -47,7 +47,7 @@ export default {
     <div class="container">
         <CharacterSearch @search="onSearch" @resetSearch="onResetSearch" />
         <CharacterList :characters="filteredCharacters"/>
-        <CharacterFound />
+        <CharacterFound :characters="filteredCharacters" />
     </div>
 </template>
 
